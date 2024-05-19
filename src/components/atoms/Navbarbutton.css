@@ -1,0 +1,15 @@
+.Navbarbutton{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  border: none;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.Navbarbutton:hover{
+    background-color: #C0BBFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

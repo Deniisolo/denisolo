@@ -1,0 +1,10 @@
+.gitHubLogoButton{ 
+    background-color: transparent;
+    border: none;
+}
+.imgGitHubLogoButton{
+    height: 70px;
+}
+.imgGitHubLogoButton:hover{
+    height: 80px;
+}

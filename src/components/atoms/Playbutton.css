@@ -1,0 +1,16 @@
+.imgPlayVideoButton{
+    height: 70px;
+    width: 70px;
+}
+.playVideoButton{
+    background-color: #a6a5a6;
+    border: none;
+    border-radius: 60px;
+    height: 80px;
+    width: 80px;
+}
+.playVideoButton:hover{
+    background-color: #C0BBFF;
+    height: 80px;
+    width: 80px;
+}
