@@ -1,10 +1,10 @@
-.gitHubLogoButton{ 
+.SocialmedialogoButton{ 
     background-color: transparent;
     border: none;
 }
-.imgGitHubLogoButton{
+.Socialmedialogoimg{
     height: 70px;
 }
-.imgGitHubLogoButton:hover{
+.Socialmedialogoimg:hover{
     height: 80px;
 }
