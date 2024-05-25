@@ -2,9 +2,6 @@
     background-color: transparent;
     border: none;
 }
-.Socialmedialogoimg{
-    height: 70px;
-}
-.Socialmedialogoimg:hover{
-    height: 80px;
+.SocialmedialogoButton:hover{
+    background-color: brown;
 }

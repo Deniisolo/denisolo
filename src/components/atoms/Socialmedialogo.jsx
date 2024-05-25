@@ -1,10 +1,8 @@
 import "./Socialmedialogo.css"
 
+
 export function Socialmedialogo(props) {
-    return <button className="SocialmedialogoButton">
-    <img
-      src={`${process.env.PUBLIC_URL}${props.srcsocialmedialogos}`}
-      alt="SocialmedialogoButton"
-    className="Socialmedialogoimg"/>
+    return <button className="SocialmedialogoButton" onClick={()=> {window.open(props.urlSocialMedia, '_blank');}}>
+    {props.img}
   </button>
 }

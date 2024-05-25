@@ -8,14 +8,21 @@ import { Titlehome } from "../components/atoms/Titlehome";
 import { Paragraphinfo } from "../components/atoms/Paragraphinfo";
 import { Hardskillspurple } from "../components/atoms/Hardskillspurple";
 import { Hardskillsgrey } from "../components/atoms/Hardskillsgrey";
-import { Shortword } from "../components/atoms/Shortword";
+import { ShowCvButton } from "../components/atoms/ShowCvButton";
 import { Image } from "../components/atoms/Image";
 import { Label } from "../components/atoms/Label";
+import { Sendbutton } from "../components/atoms/Sendbutton";
+import { Input } from "../components/atoms/Input";
+import { InfoLabel } from "../components/atoms/InfoLabel";
+import { Contactinformation } from "../components/atoms/Contactinformation";
+import { FaGithub } from "react-icons/fa";
 export function Devviews() {
   return (
     <div className="devDiv">
       <Navbarbutton navBarinfo={"Portafolio"}></Navbarbutton>
       <Navbarbutton navBarinfo={"Sobre mi"}></Navbarbutton>
+      <Navbarbutton navBarinfo={"hola"}></Navbarbutton>
+      <Navbarbutton navBarinfo={"que mas "}></Navbarbutton>
       <Navbarbutton navBarinfo={"Contacto"}></Navbarbutton>
       <Logo></Logo>
       <Titlehome></Titlehome>
@@ -33,22 +40,29 @@ export function Devviews() {
       <Photohome></Photohome>
       <Playbutton></Playbutton>
       <Socialmedialogo
-        srcsocialmedialogos={"/img/linkedin.png"}
+        urlSocialMedia={"https://github.com/Deniisolo"}
+        img={<FaGithub size={"80px"} />}
       ></Socialmedialogo>
-      <Socialmedialogo
-        srcsocialmedialogos={"/img/Github.png"}
-      ></Socialmedialogo>
-      <Socialmedialogo
-        srcsocialmedialogos={"/img/tiktok.png"}
-      ></Socialmedialogo>
+      <Socialmedialogo img={<FaGithub size={"80px"} />}></Socialmedialogo>
+      <Socialmedialogo img={<FaGithub size={"80px"} />}></Socialmedialogo>
       <Hardskillspurple hardSkillsPurpleButton={"HTML"}></Hardskillspurple>
       <Hardskillsgrey hardSkillsGreyButton={"HTML"}></Hardskillsgrey>
-      <Shortword shortWordParagraph={"Abrir CV"}> </Shortword>
+      <ShowCvButton CvButton={"Abrir CV"}></ShowCvButton>
       <Image></Image>
-      <Label laberinformation="Name"></Label>
-      <Label laberinformation="Email"></Label>
-      <Label laberinformation="Subject"></Label>
-      <Label laberinformation=" Message"></Label>
+      <Label
+        laberinformation={"Si te interesa mi trabajo contactame 👩‍💻 "}
+      ></Label>
+      <Sendbutton></Sendbutton>
+      <Input></Input>
+      <InfoLabel infoLabelparagraph={"Info"}></InfoLabel>
+      <Contactinformation
+        ContactinformationParagraph={"Email: deniissolo@gmail.com"}
+      ></Contactinformation>
+      <Contactinformation
+        ContactinformationParagraph={
+          "Linkedin: https://www.linkedin.com/in/denisolo/"
+        }
+      ></Contactinformation>
     </div>
   );
 }
