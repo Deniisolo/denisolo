@@ -16,6 +16,18 @@ import { Input } from "../components/atoms/Input";
 import { InfoLabel } from "../components/atoms/InfoLabel";
 import { Contactinformation } from "../components/atoms/Contactinformation";
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
+import { Techlogo } from "../components/atoms/Techlogo";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
+import { FaFigma } from "react-icons/fa6";
+import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoHtml5 } from "react-icons/io";
+import { Portafoliodescription } from "../components/atoms/Portafoliodescription";
+
 export function Devviews() {
   return (
     <div className="devDiv">
@@ -43,8 +55,14 @@ export function Devviews() {
         urlSocialMedia={"https://github.com/Deniisolo"}
         img={<FaGithub size={"80px"} />}
       ></Socialmedialogo>
-      <Socialmedialogo img={<FaGithub size={"80px"} />}></Socialmedialogo>
-      <Socialmedialogo img={<FaGithub size={"80px"} />}></Socialmedialogo>
+      <Socialmedialogo
+        urlSocialMedia={"https://www.linkedin.com/in/denisolo/"}
+        img={<FaLinkedin size={"80px"} />}
+      ></Socialmedialogo>
+      <Socialmedialogo
+        urlSocialMedia={"https://www.tiktok.com/@deniisolo"}
+        img={<AiFillTikTok size={"92px"} />}
+      ></Socialmedialogo>
       <Hardskillspurple hardSkillsPurpleButton={"HTML"}></Hardskillspurple>
       <Hardskillsgrey hardSkillsGreyButton={"HTML"}></Hardskillsgrey>
       <ShowCvButton CvButton={"Abrir CV"}></ShowCvButton>
@@ -63,6 +81,18 @@ export function Devviews() {
           "Linkedin: https://www.linkedin.com/in/denisolo/"
         }
       ></Contactinformation>
+      <Techlogo imgtech={<IoLogoJavascript size={"40px"} />}></Techlogo>
+      <Techlogo imgtech={<FaReact size={"40px"} />}></Techlogo>
+      <Techlogo imgtech={<FaGitAlt size={"40px"} />}></Techlogo>
+      <Techlogo imgtech={<SiTypescript size={"40px"} />}></Techlogo>
+      <Techlogo imgtech={<FaFigma size={"40px"} />}></Techlogo>
+      <Techlogo imgtech={<IoLogoCss3 size={"40px"} />}></Techlogo>
+      <Techlogo imgtech={<IoLogoHtml5 size={"40px"} />}></Techlogo>
+      <Portafoliodescription
+        portafoliDescription={
+          "Lorem Ipsumes simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"
+        }
+      ></Portafoliodescription>
     </div>
   );
 }
