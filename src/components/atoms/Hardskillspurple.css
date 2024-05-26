@@ -1,11 +1,29 @@
-.hardSkillsPurpleButton{
-    background-color: #C0BBFF;
-    border: none;
-    height: 100%;
-    font-size: 36px;
-    border-radius: 20px;
-    padding: 10px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.hardSkillsPurpleButton {
+  background-color: #c0bbff;
+  border: none;
+  height: 100%;
+  font-size: 36px;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px;
+  color: black;
+}
+@media (max-width: 1024px) {
+  .hardSkillsPurpleButton {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hardSkillsPurpleButton {
+    font-size: 23px;
+    padding: 6px;
+    border-radius: 15px;
+    margin: 5px;
+  }
 }

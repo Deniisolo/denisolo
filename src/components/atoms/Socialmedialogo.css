@@ -1,7 +1,5 @@
-.SocialmedialogoButton{ 
-    background-color: transparent;
-    border: none;
-}
-.SocialmedialogoButton:hover{
-    background-color: brown;
+.SocialmedialogoButton {
+  background-color: transparent;
+  border: none;
+  color: black;
 }

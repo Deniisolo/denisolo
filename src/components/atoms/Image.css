@@ -1,0 +1,22 @@
+.imgDenisoloTech {
+  border-radius: 40px;
+  height: 500px;
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .imgDenisoloTech {
+    max-width: 500px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgDenisoloTech {
+    max-width: 400px;
+    max-height: 250px;
+    border-radius: 20px;
+  }
+}

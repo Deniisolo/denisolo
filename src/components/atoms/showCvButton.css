@@ -1,14 +1,29 @@
-.cvButton{
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    background-color: transparent;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
+.cvButton {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
 }
-.cvButton:hover{
-    background-color: #C0BBFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.cvButton:hover {
+  background-color: #c0bbff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1024px) {
+  .cvButton {
+    font-size: 32px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cvButton {
+    font-size: 24px;
+    padding: 6px;
+    border-radius: 15px;
+  }
 }
