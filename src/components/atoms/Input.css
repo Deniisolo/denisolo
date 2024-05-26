@@ -1,5 +1,23 @@
 .inputMessage {
-    height: 200px;
-    width: 500px;
-    margin-bottom: 10px;
+  height: 200px;
+  width: 500px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .inputMessage {
+    width: 400px;
+    height: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputMessage {
+    width: 90%;
+    height: 150px;
+    font-size: 12px;
+  }
 }

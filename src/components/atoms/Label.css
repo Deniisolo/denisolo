@@ -1,6 +1,18 @@
-.label{
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 32px;
+.label {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .label {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .label {
+    font-size: 25px;
+  }
 }
