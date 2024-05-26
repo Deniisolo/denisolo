@@ -1,9 +1,18 @@
-.logoName{
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 50px;
+.logoName {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 50px;
 }
-.logoName:hover{
-    color: #aaa8a8;
+.logoName:hover {
+  color: #aaa8a8;
+}
+@media (max-width: 768px) {
+  .logoName {
+    font-size: 30px;
+    margin-left: 1px;
+  }
 }

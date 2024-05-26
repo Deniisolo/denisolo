@@ -1,0 +1,72 @@
+.containerNav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 20px 30px 0px 30px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .containerNav {
+    grid-template-columns: auto auto;
+    padding: 10px 20px;
+  }
+  .buttonsContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    background-color: white;
+  }
+  .buttonsContainer {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .buttonsContainer.open {
+    display: flex;
+  }
+  .logoName {
+    font-size: 30px;
+    grid-column: 1;
+    margin-right: auto;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    color: black;
+  }
+}
+@media (max-width: 1024px) {
+  .containerNav {
+    padding: 15px 20px; /* Ajustar el padding para tablets */
+  }
+
+  .logoName {
+    font-size: 40px; /* Ajustar el tamaño del logo para tablets */
+  }
+
+  .Navbarbutton {
+    font-size: 32px; /* Ajustar el tamaño de los botones para tablets */
+  }
+}
