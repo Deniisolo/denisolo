@@ -7,10 +7,10 @@ import { Formcontacme } from "../components/molecules/Formcontacme";
 import { Infomation } from "../components/molecules/Infomation";
 import { Card } from "../components/atoms/Card";
 import { Techlogos } from "../components/molecules/Techlogos";
+import { Video } from "../components/atoms/Video";
 export function Devmolecules() {
   return (
     <div>
-      <Navbar></Navbar>
       <Homedescription></Homedescription>
       <Allsocialmedia></Allsocialmedia>
       <Hardskills></Hardskills>
@@ -23,6 +23,7 @@ export function Devmolecules() {
         cardTwo={<div>holass2</div>}
       ></Card>
       <Techlogos></Techlogos>
+      <Video></Video>
     </div>
   );
 }
