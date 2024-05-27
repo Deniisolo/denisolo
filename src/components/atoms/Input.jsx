@@ -1,5 +1,11 @@
-import "./Input.css"
+import "./Input.css";
 
-export function Input (){
-    return <input className="inputMessage" type="text" placeholder="Aqui puedes escribirme un mensajes 👩🏻‍💻 recuerda dejarme tu contacto" />
+export function Input() {
+  return (
+    <textarea
+      className="inputMessage"
+      type="text"
+      placeholder="Here you can write me a message 👩🏻‍💻 remember to leave me your contact details"
+    />
+  );
 }

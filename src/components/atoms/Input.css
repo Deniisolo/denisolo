@@ -1,23 +1,39 @@
 .inputMessage {
-  height: 200px;
-  width: 500px;
+  height: 300px;
+  width: 600px;
   margin-bottom: 10px;
   padding: 10px;
   font-size: 16px;
   box-sizing: border-box;
+  resize: none;
 }
+
+/* Estilos para el placeholder */
+.inputMessage::placeholder {
+  color: #aaa;
+  font-size: 16px;
+}
+
+/* Media query para tablets */
 @media (max-width: 1024px) {
   .inputMessage {
     width: 400px;
     height: 180px;
     font-size: 14px;
   }
+  .inputMessage::placeholder {
+    font-size: 14px;
+  }
 }
 
+/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .inputMessage {
     width: 90%;
     height: 150px;
+    font-size: 12px;
+  }
+  .inputMessage::placeholder {
     font-size: 12px;
   }
 }

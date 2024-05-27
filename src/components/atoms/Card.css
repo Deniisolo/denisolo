@@ -1,0 +1,18 @@
+.card {
+  display: grid;
+  justify-content: center;
+}
+
+.cardChildOne {
+  background-color: #dbceef;
+  height: 250px;
+  width: 350px;
+}
+
+.cardChildTwo {
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
