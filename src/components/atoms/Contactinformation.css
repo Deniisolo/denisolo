@@ -1,6 +1,20 @@
-.contactInformationParagraph{
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 24px;
+.contactInformationParagraph {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+  padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .contactInformationParagraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactInformationParagraph {
+    font-size: 20px;
+  }
 }

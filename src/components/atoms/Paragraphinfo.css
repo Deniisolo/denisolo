@@ -3,5 +3,19 @@
   font-weight: 300;
   font-style: normal;
   font-size: 40px;
-  margin-top: 0px;
+  margin: 0px 10px 0px 10px;
+}
+
+@media (max-width: 1024px) {
+  .ParagraphinfoP {
+    font-size: 32px;
+    margin: 0px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ParagraphinfoP {
+    font-size: 30px;
+    margin: 0px 5px;
+  }
 }

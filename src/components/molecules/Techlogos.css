@@ -1,0 +1,9 @@
+.techlogos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.techlogos-container > * {
+  margin: 10px;
+}
