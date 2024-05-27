@@ -1,0 +1,18 @@
+.homestyle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+.rightSide {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+}
+.leftSide {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  place-items: center;
+}

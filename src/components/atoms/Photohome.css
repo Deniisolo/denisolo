@@ -1,3 +1,24 @@
-img {
- height: 579px;
+.responsive-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .responsive-photo {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .responsive-photo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .responsive-photo {
+    display: none;
+  }
 }
