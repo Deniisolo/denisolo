@@ -4,18 +4,21 @@
   grid-template-rows: 1fr;
   height: 100%;
 }
+
 .rightSide {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: auto auto auto;
   place-items: center;
   padding: 20px;
 }
+
 .leftSide {
   display: grid;
   height: 100%;
   place-items: center;
   padding: 20px;
 }
+
 @media (max-width: 768px) {
   .homestyle {
     grid-template-columns: 1fr;
