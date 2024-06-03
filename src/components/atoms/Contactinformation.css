@@ -1,20 +1,27 @@
 .contactInformationParagraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 300px;
+}
+.contactInformationParagraphp {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
 }
 
 @media (max-width: 1024px) {
-  .contactInformationParagraph {
+  .contactInformationParagraphp {
     font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .contactInformationParagraph {
+  .contactInformationParagraphp {
     font-size: 20px;
   }
 }

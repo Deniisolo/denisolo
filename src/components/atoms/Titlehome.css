@@ -4,3 +4,9 @@
   font-style: normal;
   font-size: 64px;
 }
+@media (max-width: 767px) {
+  .titleHome {
+    font-size: 55px;
+    margin: 2px 0px 10px 0px;
+  }
+}

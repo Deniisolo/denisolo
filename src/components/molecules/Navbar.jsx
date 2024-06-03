@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Logo } from "../atoms/Logo";
 import { Navbarbutton } from "../atoms/Navbarbutton";
+import { useNavigate } from "react-router-dom";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ export function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  const navigate = useNavigate();
   return (
     <div className="containerNav">
       <Logo />
@@ -17,7 +18,12 @@ export function Navbar() {
         ☰
       </button>
       <div className={`buttonsContainer ${isOpen ? "open" : ""}`}>
-        <Navbarbutton navBarinfo={"Portfolio"} />
+        <Navbarbutton
+          onClick={() => {
+            navigate("/portfolio");
+          }}
+          navBarinfo={"Portfolio"}
+        />
         <Navbarbutton navBarinfo={"About me"} />
         <Navbarbutton navBarinfo={"Contact me"} />
       </div>

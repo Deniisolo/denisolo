@@ -31,9 +31,10 @@
     justify-content: center;
     gap: 20px;
     position: absolute;
-    top: 60px;
+    top: 40px;
     right: 0;
     width: 100%;
+    height: 140px;
     display: none;
     background-color: white;
   }
@@ -56,18 +57,19 @@
     position: absolute;
     right: 20px;
     color: black;
+    z-index: 1;
   }
 }
 @media (max-width: 1024px) {
   .containerNav {
-    padding: 15px 20px; /* Ajustar el padding para tablets */
+    padding: 15px 20px;
   }
 
   .logoName {
-    font-size: 40px; /* Ajustar el tamaño del logo para tablets */
+    font-size: 40px;
   }
 
   .Navbarbutton {
-    font-size: 32px; /* Ajustar el tamaño de los botones para tablets */
+    font-size: 32px;
   }
 }
