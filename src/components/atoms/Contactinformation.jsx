@@ -1,4 +1,10 @@
-import "./Contactinformation.css"
-export function Contactinformation(props){
-    return <p className="contactInformationParagraph"> {props.ContactinformationParagraph}</p>
+import "./Contactinformation.css";
+export function Contactinformation(props) {
+  return (
+    <div className="contactInformationParagraph">
+      <p className="contactInformationParagraphp">
+        {props.ContactinformationParagraph}
+      </p>
+    </div>
+  );
 }
