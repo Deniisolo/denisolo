@@ -10,7 +10,6 @@
   color: black;
 }
 .cvButton:hover {
-  background-color: #c0bbff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1024px) {

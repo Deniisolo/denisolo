@@ -9,6 +9,7 @@ import { FaFigma } from "react-icons/fa6";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoHtml5 } from "react-icons/io";
 import { Techlogo } from "../components/atoms/Techlogo";
+import { Allsocialmedia } from "../components/molecules/Allsocialmedia";
 
 export function Portfolio() {
   return (
@@ -101,6 +102,7 @@ export function Portfolio() {
           ></Contactinformation>
         }
       ></Card>
+      <Allsocialmedia></Allsocialmedia>
     </div>
   );
 }
