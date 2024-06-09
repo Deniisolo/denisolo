@@ -1,5 +1,16 @@
 import "./Logo.css";
+import { useNavigate } from "react-router-dom";
 
 export function Logo() {
-  return <button className="logoName">Denis Alvarez</button>;
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => {
+        navigate("/");
+      }}
+      className="logoName"
+    >
+      Denis Alvarez
+    </button>
+  );
 }

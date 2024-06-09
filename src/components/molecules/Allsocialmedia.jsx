@@ -8,15 +8,15 @@ export function Allsocialmedia() {
     <div className="containerSocialmedialogo">
       <Socialmedialogo
         urlSocialMedia={"https://github.com/Deniisolo"}
-        img={<FaGithub size={"80px"} />}
+        img={<FaGithub size={"70px"} />}
       ></Socialmedialogo>
       <Socialmedialogo
         urlSocialMedia={"https://www.linkedin.com/in/denisolo/"}
-        img={<FaLinkedin size={"80px"} />}
+        img={<FaLinkedin size={"70px"} />}
       ></Socialmedialogo>
       <Socialmedialogo
         urlSocialMedia={"https://www.tiktok.com/@deniisolo"}
-        img={<AiFillTikTok size={"92px"} />}
+        img={<AiFillTikTok size={"82px"} />}
       ></Socialmedialogo>
     </div>
   );

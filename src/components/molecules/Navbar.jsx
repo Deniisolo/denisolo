@@ -24,7 +24,13 @@ export function Navbar() {
           }}
           navBarinfo={"Portfolio"}
         />
-        <Navbarbutton navBarinfo={"About me"} />
+        <Navbarbutton
+          onClick={() => {
+            navigate("/aboutme");
+          }}
+          navBarinfo={"About me"}
+        />
+
         <Navbarbutton navBarinfo={"Contact me"} />
       </div>
     </div>
