@@ -31,7 +31,12 @@ export function Navbar() {
           navBarinfo={"About me"}
         />
 
-        <Navbarbutton navBarinfo={"Contact me"} />
+        <Navbarbutton
+          onClick={() => {
+            navigate("/contactme");
+          }}
+          navBarinfo={"Contact me"}
+        />
       </div>
     </div>
   );

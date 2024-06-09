@@ -1,0 +1,35 @@
+.aboutMeContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  place-content: center;
+  gap: 50px;
+}
+
+.aboutMeContainerChildOne {
+  height: 100%;
+  width: 100%;
+}
+.aboutMeContainerChildTwo {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .aboutMeContainerChildTwo {
+    height: 10px;
+    width: 10px;
+  }
+  .aboutMeContainer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .aboutMeContainerChildTwo {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .aboutMeContainerChildOne {
+    align-content: center;
+  }
+}
