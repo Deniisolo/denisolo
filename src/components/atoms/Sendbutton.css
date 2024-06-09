@@ -1,13 +1,16 @@
-.sendButton{
-    background-color:#BB99F2 ;
-    color: #FFFFFF;
-    border: none;
-    height: 50px;
-    width: 110px;
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 36px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.sendButton {
+  background-color: #bb99f2;
+  color: #ffffff;
+  border: none;
+  height: 50px;
+  width: 110px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 36px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.sendButton:hover {
+  background-color: #c6abf1;
 }

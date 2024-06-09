@@ -1,10 +1,11 @@
 .informationContainer {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
+  flex-flow: column;
+  justify-self: center;
+  align-items: center;
+  height: 35%;
+  margin-bottom: 100px;
 }
-
 @media (max-width: 1024px) {
   .informationContainer {
     padding: 8px;
