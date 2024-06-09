@@ -1,4 +1,15 @@
 import "./showCvButton.css";
+import { useNavigate } from "react-router-dom";
 export function ShowCvButton(props) {
-  return <button className="cvButton">{props.CvButton}</button>;
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => {
+        navigate("/cv");
+      }}
+      className="cvButton"
+    >
+      {props.CvButton}
+    </button>
+  );
 }

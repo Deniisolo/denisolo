@@ -4,6 +4,7 @@
   height: 450px;
   margin: 0 auto;
   display: block;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -15,8 +16,6 @@
 
 @media (max-width: 768px) {
   .imgDenisoloTech {
-    max-width: 400px;
-    max-height: 250px;
-    border-radius: 20px;
+    display: none;
   }
 }
