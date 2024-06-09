@@ -5,7 +5,7 @@
 }
 
 .playVideoButton {
-  background-color: #a6a5a6;
+  background-color: #bb99f2;
   border: none;
   border-radius: 60px;
   height: 80px;
@@ -17,7 +17,7 @@
 }
 
 .playVideoButton:hover {
-  background-color: #c0bbff;
+  background-color: #d6d4fe;
 }
 
 .imgPlayVideoButton {
