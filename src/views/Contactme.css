@@ -6,9 +6,10 @@
 }
 .contactmeContaineChildOne {
   display: flex;
-  flex-flow: column;
+  align-self: center;
   width: 50%;
   height: 50%;
+  padding: 70px;
 }
 .contactmeContaineChildTwo {
   display: flex;
@@ -23,6 +24,7 @@
   }
   .contactmeContaineChildOne {
     width: 100%;
-    height: 100%;
+    height: 70%;
+    padding: 0%;
   }
 }

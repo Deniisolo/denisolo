@@ -17,3 +17,9 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .Navbarbutton {
+    font-size: 20px;
+  }
+}
