@@ -1,6 +1,7 @@
 .aboutMeContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 100%;
   grid-template-rows: auto;
   place-content: center;
 }
