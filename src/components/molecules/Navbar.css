@@ -58,6 +58,7 @@
     right: 20px;
     color: black;
     z-index: 1;
+    padding: 10px;
   }
 }
 @media (max-width: 1024px) {

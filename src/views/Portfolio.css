@@ -1,7 +1,38 @@
 .containerPortfolio {
   display: flex;
+  flex-flow: column;
+  height: 85%;
+  width: 100%;
+}
+
+.containerPortfolioOne {
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   height: 100%;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .containerPortfolio {
+    height: 100%;
+  }
+
+  .containerPortfolioOne {
+    overflow-y: auto;
+    padding-bottom: 100px;
+    flex-grow: 1;
+  }
+
+  .containerPortfolioTwo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

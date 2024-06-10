@@ -10,7 +10,7 @@ export function Aboutme() {
       </section>
       <section className="aboutMeContainerChildTwo">
         <Image></Image>
-        <ShowCvButton CvButton={"Abrir CV"}></ShowCvButton>
+        <ShowCvButton CvButton={"Open CV"}></ShowCvButton>
       </section>
     </section>
   );
