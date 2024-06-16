@@ -3,16 +3,18 @@
   font-weight: 700;
   font-style: normal;
   font-size: 40px;
-  background-color: transparent;
+  background-color: #965eeb;
   border: none;
+  color: aliceblue;
   border-radius: 20px;
   padding: 10px;
-  color: black;
-  height: 50px;
-  margin-top: 50px;
+  height: 70px;
+  width: 200px;
 }
 .cvButton:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #c5a6f4;
+  color: black;
 }
 @media (max-width: 1024px) {
   .cvButton {
