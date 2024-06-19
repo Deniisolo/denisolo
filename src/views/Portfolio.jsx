@@ -20,7 +20,7 @@ export function Portfolio() {
             <div>
               <Contactinformation
                 ContactinformationParagraph={
-                  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"
+                  "Movie Challenge is a platform for browsing, filtering and sorting movies with data from The Movie Database API V3. It offers an intuitive and efficient experience."
                 }
               ></Contactinformation>
               <Techlogo imgtech={<FaReact size={"35px"} />}></Techlogo>
@@ -42,7 +42,7 @@ export function Portfolio() {
             <div>
               <Contactinformation
                 ContactinformationParagraph={
-                  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"
+                  "At Denisolo.com, you will find a collection of exciting projects, each with its own story and style."
                 }
               ></Contactinformation>
               <Techlogo imgtech={<IoLogoJavascript size={"35px"} />}></Techlogo>
@@ -55,7 +55,7 @@ export function Portfolio() {
           color={"#EECEEF"}
           cardOne={
             <Contactinformation
-              ContactinformationParagraph={"Dataverse"}
+              ContactinformationParagraph={"Denisolo.com"}
             ></Contactinformation>
           }
         ></Card>
@@ -64,7 +64,7 @@ export function Portfolio() {
             <div>
               <Contactinformation
                 ContactinformationParagraph={
-                  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"
+                  "I established communication with the OPENAI API, a platform to discover profiles of international music artists and connect with your favourites through its integrated chat."
                 }
               ></Contactinformation>
               <Techlogo imgtech={<IoLogoJavascript size={"35px"} />}></Techlogo>
@@ -86,7 +86,7 @@ export function Portfolio() {
             <div>
               <Contactinformation
                 ContactinformationParagraph={
-                  "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"
+                  "Text Analyzer is a tool that counts characters and numbers, calculates the total sum of numbers and the average word length, useful for students, teachers and writers."
                 }
               ></Contactinformation>
               <Techlogo imgtech={<IoLogoJavascript size={"35px"} />}></Techlogo>

@@ -10,8 +10,24 @@
   grid-template-rows: auto auto auto;
   place-items: center;
   padding: 20px;
+  animation: moveup 1.5s ease-out forwards;
 }
 
+@keyframes moveup {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive-photo {
+    max-width: 450px;
+  }
+}
 .leftSide {
   display: grid;
   height: 100%;

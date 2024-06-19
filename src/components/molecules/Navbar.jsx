@@ -40,21 +40,21 @@ export function Navbar() {
         <Navbarbutton
           onClick={() => {
             navigate("/portfolio");
-            setIsOpen(false); // Cerrar el menú al hacer clic en un botón
+            setIsOpen(false);
           }}
           navBarinfo={"Portfolio"}
         />
         <Navbarbutton
           onClick={() => {
             navigate("/aboutme");
-            setIsOpen(false); // Cerrar el menú al hacer clic en un botón
+            setIsOpen(false);
           }}
           navBarinfo={"About me"}
         />
         <Navbarbutton
           onClick={() => {
             navigate("/contactme");
-            setIsOpen(false); // Cerrar el menú al hacer clic en un botón
+            setIsOpen(false);
           }}
           navBarinfo={"Contact me"}
         />

@@ -6,6 +6,7 @@
   background-color: transparent;
   color: black;
   font-size: 50px;
+  z-index: 999;
 }
 .logoName:hover {
   color: #aaa8a8;
