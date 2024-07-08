@@ -19,9 +19,9 @@ export function Hardskills() {
       <Hardskillsgrey
         hardSkillsGreyButton={"Responsive Design"}
       ></Hardskillsgrey>
-      <Hardskillspurple hardSkillsPurpleButton={"Figma"}></Hardskillspurple>
-      <Hardskillsgrey hardSkillsGreyButton={"Unit Testing"}></Hardskillsgrey>
-      <Hardskillspurple hardSkillsPurpleButton={"Scrum"}></Hardskillspurple>
+      <Hardskillspurple
+        hardSkillsPurpleButton={"Unit Testing"}
+      ></Hardskillspurple>
     </div>
   );
 }
