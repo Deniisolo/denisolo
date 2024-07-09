@@ -15,6 +15,20 @@
   justify-content: center;
   align-items: center;
 }
+@keyframes butonanimation {
+  0% {
+    background-color: #918ce7;
+  }
+  25% {
+    background-color: #8681ec;
+  }
+  50% {
+    background-color: #716af2;
+  }
+}
+.playVideoButton {
+  animation: butonanimation 2s infinite;
+}
 
 .playVideoButton:hover {
   background-color: #d6d4fe;
