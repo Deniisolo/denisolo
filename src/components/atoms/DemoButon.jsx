@@ -1,4 +1,4 @@
 import "./DemoButon.css";
 export function DemoButon() {
-  return <button> DEMO</button>;
+  return <button className="demoButton"> DEMO </button>;
 }
