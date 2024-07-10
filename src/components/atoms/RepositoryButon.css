@@ -1,4 +1,4 @@
-.demoButton {
+.repositoryButton {
   background-color: #bb99f2;
   color: #ffffff;
   padding: 10px;
@@ -14,6 +14,6 @@
   transition: background-color 0.3s ease;
 }
 
-.demoButton:hover {
+.repositoryButton:hover {
   background-color: #c6abf1;
 }
