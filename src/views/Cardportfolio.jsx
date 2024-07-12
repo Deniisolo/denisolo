@@ -13,9 +13,10 @@ export function Cardportfolio({ project, onClose }) {
       <button className="closeModal" onClick={onClose}>
         X
       </button>
-      <PhotoPortfolio />
+
       <TitlePortfolio title={project.title} />
       <Label text={project.label} />
+      <PhotoPortfolio imagen={project.imagen} />
       <Contactinformation ContactinformationParagraph={project.description} />
       <DemoButon demoLink={project.demoLink} />
       <RepositoryButon repoLink={project.repoLink} />
