@@ -1,4 +1,4 @@
 import "./RepositoryButon.css";
-export function RepositorioButon() {
+export function RepositoryButon() {
   return <button className="repositoryButton"> Repository</button>;
 }

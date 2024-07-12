@@ -10,7 +10,7 @@ import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoHtml5 } from "react-icons/io";
 import { Techlogo } from "../components/atoms/Techlogo";
 import { Allsocialmedia } from "../components/molecules/Allsocialmedia";
-
+import { Openmodal } from "../components/atoms/Openmodal";
 export function Portfolio() {
   return (
     <div className="containerPortfolio">
@@ -37,6 +37,7 @@ export function Portfolio() {
             ></Contactinformation>
           }
         ></Card>
+
         <Card
           cardTwo={
             <div>

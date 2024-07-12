@@ -1,0 +1,13 @@
+.openModalbutton {
+  background-color: white;
+  font-size: 20px;
+  padding: 3px;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-weight: 300;
+}
+
+.openModalbutton:hover {
+  background-color: rgb(227, 194, 253);
+  font-size: 24px;
+}
