@@ -1,11 +1,11 @@
-import React from "react";
 import "./Cv.css";
 export function Cv() {
   return (
     <div className="cvContainer">
-      <iframe
+      <embed
         title="CvDenisAlvarez"
-        src={`${process.env.PUBLIC_URL}/PDF/CV_Denis_Alvarez_Front-End_Developer.pdf`}
+        src={`${process.env.PUBLIC_URL}/CV_Denis_Alvarez_Front-End_Developer.pdf`}
+        type="application/pdf"
         width="100%"
         height="100%"
       />

@@ -3,12 +3,11 @@ import { Modal } from "./Modal";
 import { Cardportfolio } from "../../views/Cardportfolio";
 import "./Openmodal.css";
 
-export function Openmodal({ project }) {
+export function Openmodal() {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectProject] = useState(null);
 
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
-  const projects = [
+  const project = [
     {
       id: 1,
       title: "Movie-Challenge",
@@ -54,16 +53,28 @@ export function Openmodal({ project }) {
       repoLink: "https://github.com/Deniisolo/DEV014-text-analyzer",
     },
   ];
+  const openModal = (project) => {
+    setSelectProject(false);
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectProject(null);
+  };
 
   return (
     <div>
-      <button className="openModalButton" onClick={openModal}>
-        More
+      <button
+        key={project.id}
+        className="openModalButton"
+        onClick={() => openModal(project)}
+      >
+        More: {project.title}
       </button>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <Cardportfolio
-          onClose={closeModal} // Cambiado de handleClose a closeModal
-        />
+        {selectedProject && (
+          <Cardportfolio project={selectedProject} onClose={closeModal} />
+        )}
       </Modal>
     </div>
   );

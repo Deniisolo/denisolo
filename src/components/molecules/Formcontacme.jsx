@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 import { Label } from "../atoms/Label";
 import "./Formcontacme.css";
 
@@ -24,10 +23,6 @@ export function Formcontacme() {
         }
       );
   };
-  const captcha = useRef(null);
-  const onChange = () => {
-    console.log(captcha.current.getValue());
-  };
   return (
     <div className="containerFormcontacme">
       <Label
@@ -44,11 +39,6 @@ export function Formcontacme() {
         <textarea className="inputFormMessge" name="message" />
         <input className="sendButton" type="submit" value="Send" />
       </form>
-      <ReCAPTCHA
-        ref={captcha}
-        sitekey="6LfkkgIqAAAAAOgUmPEumJ08vUtVp5NZPdD-XNux"
-        onChange={onChange}
-      />
     </div>
   );
 }
