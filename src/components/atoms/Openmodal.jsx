@@ -64,11 +64,17 @@ export function Openmodal() {
 
   return (
     <div>
-      <button className="openModalButton" onClick={openModal}>
-        More
+      <button
+        key={project.id}
+        className="openModalButton"
+        onClick={() => openModal(project)}
+      >
+        More: {project.title}
       </button>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <Cardportfolio project={selectedProject} onClose={closeModal} />
+        {selectedProject && (
+          <Cardportfolio project={selectedProject} onClose={closeModal} />
+        )}
       </Modal>
     </div>
   );
