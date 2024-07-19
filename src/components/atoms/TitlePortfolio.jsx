@@ -1,3 +1,4 @@
-export function TitlePortfolio() {
-  <h2> soy los titulos de los portafolios</h2>;
+import "./TitlePortfolio.css";
+export function TitlePortfolio(props) {
+  return <h1 className="titulo">{props.titlePorfolioCard}</h1>;
 }

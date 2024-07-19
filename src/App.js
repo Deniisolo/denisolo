@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Aboutme } from "./views/Aboutme";
 import { Cv } from "./views/Cv";
 import { Contactme } from "./views/Contactme";
-import { Cardportfolio } from "./views/Cardportfolio";
+import { Modal } from "./components/atoms/Modal";
 // import { Devviews } from "./views/Devviews";
 // import { Devmolecules } from "./views/Devmolecules";
 function App() {
@@ -23,7 +23,7 @@ function App() {
               <Route path="/aboutme" element={<Aboutme />} />
               <Route path="/cv" element={<Cv />} />
               <Route path="/contactme" element={<Contactme />} />
-              <Route path="/cardportfolio" element={<Cardportfolio/>} />
+              <Route path="/modal" element={<Modal/>} />
             </Routes>
           }
         ></Maintemplate>
