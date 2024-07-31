@@ -1,4 +1,4 @@
-/* .openModalbutton {
+.openModalbutton {
   background-color: white;
   font-size: 20px;
   padding: 3px;
@@ -10,13 +10,4 @@
 .openModalbutton:hover {
   background-color: rgb(227, 194, 253);
   font-size: 24px;
-} */
-/* Openmodal.css */
-.openModalButton {
-  background-color: #b279f7;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
 }
