@@ -11,6 +11,13 @@ import { IoLogoHtml5 } from "react-icons/io";
 import { Techlogo } from "../components/atoms/Techlogo";
 import { Allsocialmedia } from "../components/molecules/Allsocialmedia";
 
+import {
+  project1,
+  project2,
+  project3,
+  project4,
+} from "../components/data/Data";
+
 export function Portfolio() {
   return (
     <div className="containerPortfolio">
@@ -36,6 +43,7 @@ export function Portfolio() {
               ContactinformationParagraph={"Movie-Challenge"}
             />
           }
+          Portfolio={project1}
         />
 
         <Card
@@ -57,6 +65,7 @@ export function Portfolio() {
           cardOne={
             <Contactinformation ContactinformationParagraph={"Denisolo.com"} />
           }
+          Portfolio={project2}
         />
 
         <Card
@@ -80,6 +89,7 @@ export function Portfolio() {
               ContactinformationParagraph={"Dataverse-chat"}
             />
           }
+          Portfolio={project3}
         />
 
         <Card
@@ -101,6 +111,7 @@ export function Portfolio() {
           cardOne={
             <Contactinformation ContactinformationParagraph={"Text Analyzer"} />
           }
+          Portfolio={project4}
         />
       </div>
       <div className="containerPortfolioTwo">
