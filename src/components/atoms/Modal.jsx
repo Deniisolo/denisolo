@@ -6,12 +6,10 @@ export function Modal({ isOpen, onClose, project }) {
   if (!isOpen || !project) return null;
 
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content">
-        <button className="closeButton" onClick={onClose}>
-          X
-        </button>
         <h2>{project.title}</h2>
+
         <img
           key={project.id}
           src={project.imagen}

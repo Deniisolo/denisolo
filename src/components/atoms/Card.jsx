@@ -9,9 +9,10 @@ export function Card(props) {
       <div className="cardChildOne" style={{ backgroundColor: props.color }}>
         {props.cardOne}
       </div>
-      <div className="cardChildTwo">{props.cardTwo}</div>
 
-      <Openmodal portafolio={props.Portfolio}></Openmodal>
+      <div className="cardChildTwo">
+        {props.cardTwo} <Openmodal portafolio={props.Portfolio}></Openmodal>
+      </div>
     </div>
   );
 }

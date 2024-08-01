@@ -6,15 +6,16 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-flow: column;
 }
 
 .closeButton {
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+  border-radius: 20px;
+  background-color: #d9d9d9;
 }
 .closeButton:hover {
   background-color: #bb99f2;
@@ -55,7 +56,7 @@
   height: 50px;
   width: 100px;
   align-content: center;
-
+  text-decoration: none;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -67,7 +68,7 @@
   height: 50px;
   width: 100px;
   align-content: center;
-
+  text-decoration: none;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
