@@ -1,7 +1,7 @@
 .containerPortfolio {
   display: flex;
   flex-flow: column;
-  height: 100%;
+
   width: 100%;
   margin-top: 30px;
 }
@@ -10,16 +10,13 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 100%;
+  padding-bottom: 100px;
+  height: calc(100% - 100px);
   align-items: center;
 }
-@media (max-width: 768px) {
-  .containerPortfolio {
-    height: 100%;
-  }
 
+@media (max-width: 768px) {
   .containerPortfolioOne {
-    overflow-y: auto;
     padding-bottom: 100px;
     flex-grow: 1;
   }
