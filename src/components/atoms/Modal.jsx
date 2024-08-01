@@ -8,19 +8,36 @@ export function Modal({ isOpen, onClose, project }) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
+        <button className="closeButton" onClick={onClose}>
+          X
+        </button>
         <h2>{project.title}</h2>
-        <img src={project.imagen} alt={project.title} />
+        <img
+          key={project.id}
+          src={project.imagen}
+          alt={project.title}
+          className="imagePorfolio"
+        />
         <p>{project.description}</p>
         <p>{project.technologies}</p>
-        <div>
-          <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+        <div className="containerButons">
+          <a
+            href={project.demoLink}
+            className="demoLink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Demo
           </a>
-          <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
-            Repo
+          <a
+            href={project.repoLink}
+            className="RepoLink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repository
           </a>
         </div>
-        <button onClick={onClose}>Close</button>
       </div>
     </div>
   );
