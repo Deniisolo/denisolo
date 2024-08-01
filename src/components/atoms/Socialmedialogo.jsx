@@ -2,7 +2,7 @@ import "./Socialmedialogo.css"
 
 
 export function Socialmedialogo(props) {
-    return <button className="SocialmedialogoButton" onClick={()=> {window.open(props.urlSocialMedia, '_blank');}}>
-    {props.img}
-  </button>
+  return (
+    <a className="SocialmedialogoButton" href={props.urlSocialMedia} target="_blank" rel="noopener noreferrer"> {props.img} </a>
+  )
 }

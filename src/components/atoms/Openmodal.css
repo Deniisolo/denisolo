@@ -11,4 +11,5 @@
 .openModalbutton:hover {
   background-color: rgb(227, 194, 253);
   font-size: 24px;
+  cursor: pointer;
 }
