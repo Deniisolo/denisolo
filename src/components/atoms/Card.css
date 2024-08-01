@@ -1,6 +1,7 @@
 .card {
-  display: grid;
+  display: flex;
   justify-content: center;
+  flex-flow: column;
 }
 
 .cardChildOne {
@@ -11,7 +12,7 @@
 
 .cardChildTwo {
   background-color: rgb(255, 255, 255);
-  height: 380px;
+  height: 340px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;

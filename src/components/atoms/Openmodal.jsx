@@ -17,14 +17,12 @@ export function Openmodal(props) {
   };
   return (
     <div>
-      <div>
-        <button
-          className="openModalbutton"
-          onClick={() => openModal(props.portafolio[0])}
-        >
-          Ver más
-        </button>
-      </div>
+      <button
+        className="openModalbutton"
+        onClick={() => openModal(props.portafolio[0])}
+      >
+        Ver más
+      </button>
 
       {selectedProject && (
         <Modal
