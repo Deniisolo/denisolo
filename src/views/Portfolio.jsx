@@ -114,9 +114,6 @@ export function Portfolio() {
           Portfolio={project4}
         />
       </div>
-      <div className="containerPortfolioTwo">
-        <Allsocialmedia />
-      </div>
     </div>
   );
 }

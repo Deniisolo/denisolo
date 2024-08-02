@@ -1,6 +1,8 @@
 import { InfoLabel } from "../atoms/InfoLabel";
 import "./Infomation.css";
 import { Contactinformation } from "../atoms/Contactinformation";
+import { Allsocialmedia } from "./Allsocialmedia";
+
 export function Infomation() {
   return (
     <div className="informationContainer">

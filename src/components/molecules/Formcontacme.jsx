@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Label } from "../atoms/Label";
 import "./Formcontacme.css";
+import { Allsocialmedia } from "./Allsocialmedia";
 
 export function Formcontacme() {
   const form = useRef();
@@ -38,6 +39,7 @@ export function Formcontacme() {
         <label className="labelForm">Message</label>
         <textarea className="inputFormMessge" name="message" />
         <input className="sendButton" type="submit" value="Send" />
+        <Allsocialmedia></Allsocialmedia>
       </form>
     </div>
   );
