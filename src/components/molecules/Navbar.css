@@ -16,7 +16,6 @@
   display: none;
   background: none;
   border: none;
-  font-size: 30px;
   cursor: pointer;
 }
 
@@ -46,6 +45,7 @@
 
   .buttonsContainer.open {
     display: flex;
+    margin-top: 30px;
   }
   .logoName {
     font-size: 30px;

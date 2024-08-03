@@ -1,64 +1,32 @@
-import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { Logo } from "../atoms/Logo";
 import { Navbarbutton } from "../atoms/Navbarbutton";
-import { useNavigate } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
+import useNavbar from "../../hooks/useNavbar";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
-  const navigate = useNavigate();
+  const { isOpen, toggleMenu, handleNavigation } = useNavbar()
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    if (isOpen) {
-      document.addEventListener("click", handleClickOutside);
-    } else {
-      document.removeEventListener("click", handleClickOutside);
-    }
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [isOpen]);
-
+  const navLinks = [
+    { path: '/portfolio', name: 'Portfolio' },
+    { path: '/aboutme', name: 'About Me' },
+    { path: '/contactme', name: 'Contact Me' },
+  ];
   return (
-    <div className="containerNav" ref={menuRef} onClick={toggleMenu}>
+    <nav className="containerNav">
       <Logo />
-      <button className="hamburger" onClick={toggleMenu}>
-        ☰
+      <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+        <FiMenu size={30} />
       </button>
-      <div className={`buttonsContainer ${isOpen ? "open" : ""}`}>
-        <Navbarbutton
-          onClick={() => {
-            navigate("/portfolio");
-            setIsOpen(false);
-          }}
-          navBarinfo={"Portfolio"}
-        />
-        <Navbarbutton
-          onClick={() => {
-            navigate("/aboutme");
-            setIsOpen(false);
-          }}
-          navBarinfo={"About me"}
-        />
-        <Navbarbutton
-          onClick={() => {
-            navigate("/contactme");
-            setIsOpen(false);
-          }}
-          navBarinfo={"Contact me"}
-        />
+      <div className={`buttonsContainer ${isOpen && "open"}`}>
+        {navLinks.map(({ path, name }) => (
+          <Navbarbutton
+            key={path}
+            onClick={() => handleNavigation(path)}
+            navBarinfo={name}
+          />
+        ))}
       </div>
-    </div>
+    </nav>
   );
 }
