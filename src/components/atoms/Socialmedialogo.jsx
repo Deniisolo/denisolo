@@ -1,5 +1,4 @@
-import "./Socialmedialogo.css"
-
+import "./Socialmedialogo.css";
 
 export function Socialmedialogo(props) {
   return (
