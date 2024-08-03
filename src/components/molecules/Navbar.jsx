@@ -31,7 +31,7 @@ export function Navbar() {
   }, [isOpen]);
 
   return (
-    <div className="containerNav" ref={menuRef}>
+    <div className="containerNav" ref={menuRef} onClick={toggleMenu}>
       <Logo />
       <button className="hamburger" onClick={toggleMenu}>
         ☰

@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import "./Allsocialmedia.css";
+
 export function Allsocialmedia() {
   return (
     <div className="containerSocialmedialogo">
