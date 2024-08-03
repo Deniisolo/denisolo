@@ -1,14 +1,12 @@
 .contactmeContainer {
   display: flex;
   width: 100%;
-  height: 70vh;
 }
 .contactmeContaineChildOne {
   display: flex;
   align-self: center;
   width: 50%;
   height: 100%;
-  padding: 70px;
 }
 .contactmeContaineChildTwo {
   display: flex;

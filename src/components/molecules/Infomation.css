@@ -4,7 +4,7 @@
   justify-self: center;
   align-items: center;
   height: 35%;
-  margin-bottom: 100px;
+  margin-top: 50px;
 }
 @media (max-width: 1024px) {
   .informationContainer {
