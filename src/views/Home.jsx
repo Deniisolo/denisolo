@@ -12,7 +12,9 @@ export function Home() {
       </div>
       <div className="rightSide">
         <Homedescription />
-        <Playbutton />
+        <div className="playButtonWrapper">
+          <Playbutton />
+        </div>
         <Allsocialmedia />
       </div>
     </div>

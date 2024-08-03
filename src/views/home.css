@@ -23,11 +23,13 @@
     opacity: 1;
   }
 }
+
 @media (min-width: 1024px) {
   .responsive-photo {
     max-width: 450px;
   }
 }
+
 .leftSide {
   display: grid;
   height: 100%;
@@ -46,4 +48,8 @@
   .rightSide {
     width: auto;
   }
+}
+
+.playButtonWrapper {
+  margin-bottom: 200px;
 }
