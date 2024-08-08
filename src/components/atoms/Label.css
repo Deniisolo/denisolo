@@ -1,10 +1,9 @@
 .label {
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 40px;
+  padding: 30px;
+  font-size: 30px;
   box-sizing: border-box;
-  height: 30px;
-  margin-bottom: 80px;
+  height: 300px;
+  margin-bottom: -40px;
 }
 
 @media (max-width: 1024px) {

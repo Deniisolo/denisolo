@@ -14,7 +14,7 @@
 .formContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   gap: 20px;
 }
 
@@ -87,7 +87,7 @@
     font-size: 12px;
   }
   .containerFormcontacme {
-    width: 70%;
+    width: 80%;
     height: 70%;
   }
   .sendButton {
@@ -113,5 +113,8 @@
 
   .labelForm {
     font-size: 12px;
+  }
+  .formContainer {
+    background-color: red;
   }
 }
