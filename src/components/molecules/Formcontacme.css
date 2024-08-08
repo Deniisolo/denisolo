@@ -81,18 +81,37 @@
   }
 }
 
-/* Media queries para pantallas muy pequeñas */
 @media (max-width: 400px) {
   .inputForm,
   .inputFormMessge {
     font-size: 12px;
   }
-
+  .containerFormcontacme {
+    width: 70%;
+    height: 70%;
+  }
   .sendButton {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .labelForm {
     font-size: 16px;
+  }
+}
+@media (max-width: 300px) {
+  .inputForm,
+  .inputFormMessge {
+    font-size: 10px;
+  }
+  .containerFormcontacme {
+    width: 70%;
+    height: 70%;
+  }
+  .sendButton {
+    font-size: 12px;
+  }
+
+  .labelForm {
+    font-size: 12px;
   }
 }

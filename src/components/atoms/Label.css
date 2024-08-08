@@ -18,3 +18,10 @@
     font-size: 25px;
   }
 }
+@media (max-width: 400px) {
+  .label {
+    margin: 10px;
+    width: 250px;
+    font-size: 16px;
+  }
+}
