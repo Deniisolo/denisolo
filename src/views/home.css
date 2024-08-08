@@ -11,6 +11,7 @@
   place-items: center;
   padding: 20px;
   animation: moveup 1.5s ease-out forwards;
+  height: 90%;
 }
 
 @keyframes moveup {
@@ -49,7 +50,18 @@
     width: auto;
   }
 }
-
-.playButtonWrapper {
-  margin-bottom: 200px;
+@media (max-width: 400px) {
+  .homestyle {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .leftSide {
+    display: none;
+  }
+  .rightSide {
+    height: 90%;
+  }
 }
+
+/* .playButtonWrapper {
+} */
