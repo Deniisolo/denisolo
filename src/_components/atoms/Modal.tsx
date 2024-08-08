@@ -1,5 +1,5 @@
 // Modal.js
-import React from "react";
+
 import "./Modal.css";
 
 export function Modal({ isOpen, onClose, project }) {

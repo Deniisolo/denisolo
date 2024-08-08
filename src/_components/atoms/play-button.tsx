@@ -1,5 +1,7 @@
-import React, { useRef, useState } from "react";
-import "./Playbutton.css";
+"use client";
+
+import { useRef, useState } from "react";
+import "./play-button.css";
 
 export function Playbutton() {
   const [isVideoVisible, setVideoVisible] = useState(false);

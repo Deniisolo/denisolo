@@ -1,16 +1,9 @@
 import "./Logo.css";
-import { useNavigate } from "react-router-dom";
 
 export function Logo() {
-  const navigate = useNavigate();
   return (
-    <button
-      onClick={() => {
-        navigate("/");
-      }}
-      className="logoName"
-    >
+    <a href={"/"} className="text-3xl font-bold transition hover:text-gray-700">
       Denis Alvarez
-    </button>
+    </a>
   );
 }
