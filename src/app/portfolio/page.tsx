@@ -11,12 +11,7 @@ import { IoLogoHtml5 } from "react-icons/io";
 import { Techlogo } from "../components/atoms/Techlogo";
 import { Allsocialmedia } from "../components/molecules/Allsocialmedia";
 
-import {
-  project1,
-  project2,
-  project3,
-  project4,
-} from "../components/data/Data";
+import { project1, project2, project3, project4 } from "./data";
 
 export function Portfolio() {
   return (

@@ -6,7 +6,7 @@ export const project1 = [
     imagen: "/img/Moviechallenge.png",
     description:
       "Movie Challenge is a platform for browsing, filtering and sorting movies with data from The Movie Database API V3. It offers an intuitive and efficient experience.",
-    technologies: "Technologies: React, TypeScript, Css, Html, Git",
+    technologies: "Technologies: TypeScript, Css, Html, Git",
     demoLink: "https://dev-014-movie-challenge-fw.vercel.app/",
     repoLink: "https://github.com/Deniisolo/DEV014-movie-challenge-fw",
   },
@@ -20,7 +20,7 @@ export const project2 = [
     imagen: "/img/Denisolo.png",
     description:
       "At Denisolo.com, you will find a collection of exciting projects, each with its own story and style.",
-    technologies: "Technologies: React, JavaScript, Css, Html, Git",
+    technologies: "Technologies: JavaScript, Css, Html, Git",
     demoLink: "https://www.denisolo.com/",
     repoLink: "https://github.com/Deniisolo/denisolo",
   },
