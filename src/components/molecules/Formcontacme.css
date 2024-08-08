@@ -14,8 +14,10 @@
 .formContainer {
   display: flex;
   flex-direction: column;
+  align-items: start;
   width: 100%;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .labelForm {
@@ -55,6 +57,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .sendButton:hover {
