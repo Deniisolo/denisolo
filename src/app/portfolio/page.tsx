@@ -3,18 +3,7 @@
 import { ProjectCard } from "~/_components/atoms/project-card";
 import { project1, project2, project3, project4 } from "./data";
 import { useState } from "react";
-import { Openmodal } from "~/_components/atoms/open-modal";
-
-type Project = {
-  id: number;
-  title: string;
-  label: string;
-  imagen: string;
-  description: string;
-  technologies: string;
-  demoLink: string;
-  repoLink: string;
-};
+import { Modal, type Project } from "~/_components/atoms/modal";
 
 export default function Portfolio() {
   const [currentProject, setCurrentProject] = useState<Project | undefined>(
@@ -23,7 +12,10 @@ export default function Portfolio() {
 
   return (
     <div className="flex flex-1 items-center justify-center gap-6">
-      {currentProject && <Openmodal portafolio={currentProject} />}
+      <Modal
+        closeCallback={() => setCurrentProject(undefined)}
+        project={currentProject}
+      />
 
       <div onClick={() => setCurrentProject(project1)}>
         <ProjectCard
