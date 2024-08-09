@@ -1,14 +1,12 @@
-import "./Cv.css";
-export function Cv() {
+export default function Cv() {
   return (
-    <div className="cvContainer">
-      <embed
-        title="CvDenisAlvarez"
-        src={`${process.env.PUBLIC_URL}/CV_Denis_Alvarez_Front-End_Developer.pdf`}
-        type="application/pdf"
-        width="100%"
-        height="100%"
-      />
-    </div>
+    <embed
+      className="flex-1"
+      title="CvDenisAlvarez"
+      src={`./CV_Denis_Alvarez_Front-End_Developer.pdf`}
+      type="application/pdf"
+      width="100%"
+      height="100%"
+    />
   );
 }
