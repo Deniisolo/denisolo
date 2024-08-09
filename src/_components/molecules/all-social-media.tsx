@@ -23,9 +23,14 @@ const socialMediaList = [
 
 export function AllSocialMedia() {
   return (
-    <div className="flex gap-4 opacity-50">
+    <div className="flex gap-4">
       {socialMediaList.map((socialMedia) => (
-        <a href={socialMedia.url} target="_blank" key={socialMedia.altText}>
+        <a
+          href={socialMedia.url}
+          target="_blank"
+          key={socialMedia.altText}
+          className="opacity-50 transition hover:opacity-90"
+        >
           <Image
             width={socialMedia.size}
             height={socialMedia.size}

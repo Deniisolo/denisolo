@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { PlayButton } from "~/_components/atoms/play-button";
 import { AllSocialMedia } from "~/_components/molecules/all-social-media";
-import "~/styles/home.css";
 
 export default function Home() {
   return (

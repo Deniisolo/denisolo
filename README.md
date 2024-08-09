@@ -9,4 +9,4 @@
 5. Los nombres de los componentes no siguen CamelCase, se renombraron.
 6. Los componentes no se "auto cierran", se cambiaron las etiquetas de cerrado.
 7. "import React from 'react';" ya no es necesario desde [React v17 (2020)](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
-8. Los links, o redirecciones, deberían hacerse usando <a>, no <button>.
+8. Los links, o redirecciones, deberían hacerse usando \<a>, no \<button>.

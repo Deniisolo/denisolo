@@ -11,7 +11,7 @@ export default function Portfolio() {
   );
 
   return (
-    <div className="flex flex-1 items-center justify-center gap-6">
+    <section className="flex flex-1 items-center justify-center gap-6">
       <Modal
         closeCallback={() => setCurrentProject(undefined)}
         project={currentProject}
@@ -107,6 +107,6 @@ export default function Portfolio() {
           color={"#DBCEEF"}
         />
       </div>
-    </div>
+    </section>
   );
 }

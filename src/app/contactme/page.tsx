@@ -1,16 +1,11 @@
-import { Formcontacme } from "../components/molecules/Formcontacme";
-import { Infomation } from "../components/molecules/Infomation";
+import { ContactForm } from "~/_components/molecules/form-contact-me";
+import { Information } from "~/_components/molecules/information";
 
-import "./Contactme.css";
-export function Contactme() {
+export default function Contactme() {
   return (
-    <section className="contactmeContainer">
-      <section className="contactmeContaineChildOne">
-        <Formcontacme></Formcontacme>
-      </section>
-      <section className="contactmeContaineChildTwo">
-        <Infomation></Infomation>
-      </section>
+    <section className="flex flex-1 gap-2 p-10">
+      <ContactForm />
+      <Information />
     </section>
   );
 }
