@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Playbutton } from "~/_components/atoms/play-button";
+import { PlayButton } from "~/_components/atoms/play-button";
 import { AllSocialMedia } from "~/_components/molecules/all-social-media";
 import "~/styles/home.css";
 
@@ -23,7 +23,7 @@ export default function Home() {
         </p>
 
         <div className="playButtonWrapper">
-          <Playbutton />
+          <PlayButton />
         </div>
 
         <AllSocialMedia />
