@@ -1,112 +1,118 @@
-import { Card } from "../components/atoms/Card";
-import "./Portfolio.css";
-import { Contactinformation } from "../components/atoms/Contactinformation";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa6";
-import { SiTypescript } from "react-icons/si";
-import { FaFigma } from "react-icons/fa6";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoHtml5 } from "react-icons/io";
-import { Techlogo } from "../components/atoms/Techlogo";
-import { Allsocialmedia } from "../components/molecules/Allsocialmedia";
+"use client";
 
+import { ProjectCard } from "~/_components/atoms/project-card";
 import { project1, project2, project3, project4 } from "./data";
+import { useState } from "react";
+import { Openmodal } from "~/_components/atoms/open-modal";
 
-export function Portfolio() {
+type Project = {
+  id: number;
+  title: string;
+  label: string;
+  imagen: string;
+  description: string;
+  technologies: string;
+  demoLink: string;
+  repoLink: string;
+};
+
+export default function Portfolio() {
+  const [currentProject, setCurrentProject] = useState<Project | undefined>(
+    undefined,
+  );
+
   return (
-    <div className="containerPortfolio">
-      <div className="containerPortfolioOne">
-        <Card
-          cardTwo={
-            <div>
-              <Contactinformation
-                ContactinformationParagraph={
-                  "Movie Challenge is a platform for browsing, filtering and sorting movies with data from The Movie Database API V3. It offers an intuitive and efficient experience."
-                }
-              />
-              <Techlogo imgtech={<FaReact size={"35px"} />} />
-              <Techlogo imgtech={<SiTypescript size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoCss3 size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoHtml5 size={"35px"} />} />
-              <Techlogo imgtech={<FaGitAlt size={"35px"} />} />
-            </div>
-          }
-          color={"#DBCEEF"}
-          cardOne={
-            <Contactinformation
-              ContactinformationParagraph={"Movie-Challenge"}
-            />
-          }
-          Portfolio={project1}
-        />
+    <div className="flex flex-1 items-center justify-center gap-6">
+      {currentProject && <Openmodal portafolio={currentProject} />}
 
-        <Card
-          cardTwo={
+      <div onClick={() => setCurrentProject(project1)}>
+        <ProjectCard
+          hero={<div>Movie-Challenge</div>}
+          contents={
             <div>
-              <Contactinformation
-                ContactinformationParagraph={
-                  "At Denisolo.com, you will find a collection of exciting projects, each with its own story and style."
-                }
-              />
-              <Techlogo imgtech={<IoLogoJavascript size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoCss3 size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoHtml5 size={"35px"} />} />
-              <Techlogo imgtech={<FaGitAlt size={"35px"} />} />
-              <Techlogo imgtech={<FaFigma size={"35px"} />} />
+              Movie Challenge is a platform for browsing, filtering and sorting
+              movies with data from The Movie Database API V3. It offers an
+              intuitive and efficient experience.
             </div>
           }
+          technologies={{
+            react: true,
+            typescript: true,
+            css: true,
+            html: true,
+            git: true,
+            figma: false,
+            javascript: false,
+          }}
+          color={"#DBCEEF"}
+        />
+      </div>
+
+      <div onClick={() => setCurrentProject(project2)}>
+        <ProjectCard
+          hero={<div>Denisolo.com</div>}
+          contents={
+            <div>
+              At Denisolo.com, you will find a collection of exciting projects,
+              each with its own story and style.
+            </div>
+          }
+          technologies={{
+            react: false,
+            typescript: false,
+            css: true,
+            html: true,
+            git: true,
+            figma: true,
+            javascript: true,
+          }}
           color={"#EECEEF"}
-          cardOne={
-            <Contactinformation ContactinformationParagraph={"Denisolo.com"} />
-          }
-          Portfolio={project2}
         />
+      </div>
 
-        <Card
-          cardTwo={
+      <div onClick={() => setCurrentProject(project3)}>
+        <ProjectCard
+          hero={<div>Dataverse-chat</div>}
+          contents={
             <div>
-              <Contactinformation
-                ContactinformationParagraph={
-                  "I established communication with the OPENAI API, a platform to discover profiles of international music artists and connect with your favourites through its integrated chat."
-                }
-              />
-              <Techlogo imgtech={<IoLogoJavascript size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoCss3 size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoHtml5 size={"35px"} />} />
-              <Techlogo imgtech={<FaGitAlt size={"35px"} />} />
-              <Techlogo imgtech={<FaFigma size={"35px"} />} />
+              I established communication with the OPENAI API, a platform to
+              discover profiles of international music artists and connect with
+              your favourites through its integrated chat.
             </div>
           }
+          technologies={{
+            react: false,
+            typescript: false,
+            css: true,
+            html: true,
+            git: true,
+            figma: true,
+            javascript: true,
+          }}
           color={"#EFCED4"}
-          cardOne={
-            <Contactinformation
-              ContactinformationParagraph={"Dataverse-chat"}
-            />
-          }
-          Portfolio={project3}
         />
+      </div>
 
-        <Card
-          cardTwo={
+      <div onClick={() => setCurrentProject(project4)}>
+        <ProjectCard
+          hero={<div> Text Analyzer </div>}
+          contents={
             <div>
-              <Contactinformation
-                ContactinformationParagraph={
-                  "Text Analyzer is a tool that counts characters and numbers, calculates the total sum of numbers and the average word length, useful for students, teachers and writers."
-                }
-              />
-              <Techlogo imgtech={<IoLogoJavascript size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoCss3 size={"35px"} />} />
-              <Techlogo imgtech={<IoLogoHtml5 size={"35px"} />} />
-              <Techlogo imgtech={<FaGitAlt size={"35px"} />} />
-              <Techlogo imgtech={<FaFigma size={"35px"} />} />
+              Text Analyzer is a tool that counts characters and numbers,
+              calculates the total sum of numbers and the average word length,
+              useful for students, teachers and writers.
             </div>
           }
+          technologies={{
+            react: false,
+            typescript: false,
+            css: true,
+            html: true,
+            git: true,
+            figma: true,
+            javascript: true,
+          }}
           color={"#DBCEEF"}
-          cardOne={
-            <Contactinformation ContactinformationParagraph={"Text Analyzer"} />
-          }
-          Portfolio={project4}
         />
       </div>
     </div>
