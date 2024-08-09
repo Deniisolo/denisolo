@@ -5,7 +5,7 @@ import "~/styles/home.css";
 
 export default function Home() {
   return (
-    <div className="bg-red flex flex-1">
+    <section className="bg-red flex flex-1">
       <div className="flex flex-1 items-center justify-center">
         <Image
           src={"/img/phoneDenis.png"}
@@ -28,6 +28,6 @@ export default function Home() {
 
         <AllSocialMedia />
       </div>
-    </div>
+    </section>
   );
 }
