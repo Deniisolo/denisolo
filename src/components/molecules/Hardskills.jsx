@@ -1,5 +1,6 @@
 import { Hardskillspurple } from "../atoms/Hardskillspurple";
 import { Hardskillsgrey } from "../atoms/Hardskillsgrey";
+import "./Hardskills.css";
 import { Label } from "../atoms/Label";
 export function Hardskills() {
   return (
