@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
         <Navbar />
-        {/* {children} */}
+        <main className="flex min-h-[91.5vh] w-full flex-col">{children}</main>
       </body>
     </html>
   );

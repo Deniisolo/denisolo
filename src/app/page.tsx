@@ -1,35 +1,31 @@
 import Image from "next/image";
-import { Photohome } from "~/_components/atoms/photo-home";
 import { Playbutton } from "~/_components/atoms/play-button";
 import { AllSocialMedia } from "~/_components/molecules/all-social-media";
-import { Homedescription } from "~/_components/molecules/home-description";
 import "~/styles/home.css";
-// import "./photo-home.css";
-import homePicture from "./img/phoneDenis.png";
 
 export default function Home() {
   return (
-    <div className="min-h-100 flex">
-      <div className="h-full items-center justify-center p-5">
+    <div className="bg-red flex flex-1">
+      <div className="flex flex-1 items-center justify-center">
         <Image
-          className="responsive-photo"
           src={"/img/phoneDenis.png"}
-          // src={homePicture}
-          fill={true}
           alt="photodeDenisolo"
-          // width={100}
-          // height={100}
+          width={450}
+          height={450}
         />
       </div>
-      <div className="h-full items-center justify-center p-5">
-        <h1 className="titleHome"> Hello! I&apos;m Denis, </h1>
-        <p>
+
+      <div className="flex flex-1 flex-col items-center justify-center gap-10 p-5 text-center">
+        <h1 className="text-[64px] font-bold"> Hello! I&apos;m Denis, </h1>
+        <p className="text-[40px] font-light">
           also known as Deniisolo on social media. I&apos;m a front-end
           developer specialised in creating amazing web experiences.
         </p>
+
         <div className="playButtonWrapper">
           <Playbutton />
         </div>
+
         <AllSocialMedia />
       </div>
     </div>

@@ -1,24 +1,39 @@
-import { Socialmedialogo } from "../atoms/Socialmedialogo";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
-import "./Allsocialmedia.css";
+import Image from "next/image";
 
-export function Allsocialmedia() {
+const socialMediaList = [
+  {
+    altText: "Github",
+    url: "https://github.com/Deniisolo",
+    src: "./img/github.svg",
+    size: 40,
+  },
+  {
+    altText: "LinkedIn",
+    url: "https://www.linkedin.com/in/denisolo/",
+    src: "./img/linkedin.svg",
+    size: 40,
+  },
+  {
+    altText: "TikTok",
+    url: "https://www.tiktok.com/@deniisolo",
+    src: "./img/tiktok.svg",
+    size: 40,
+  },
+];
+
+export function AllSocialMedia() {
   return (
-    <div className="containerSocialmedialogo">
-      <Socialmedialogo
-        urlSocialMedia={"https://github.com/Deniisolo"}
-        img={<FaGithub size={"60px"} />}
-      ></Socialmedialogo>
-      <Socialmedialogo
-        urlSocialMedia={"https://www.linkedin.com/in/denisolo/"}
-        img={<FaLinkedin size={"60px"} />}
-      ></Socialmedialogo>
-      <Socialmedialogo
-        urlSocialMedia={"https://www.tiktok.com/@deniisolo"}
-        img={<AiFillTikTok size={"72px"} />}
-      ></Socialmedialogo>
+    <div className="flex gap-4 opacity-50">
+      {socialMediaList.map((socialMedia) => (
+        <a href={socialMedia.url} target="_blank" key={socialMedia.altText}>
+          <Image
+            width={socialMedia.size}
+            height={socialMedia.size}
+            src={socialMedia.src}
+            alt={socialMedia.altText}
+          />
+        </a>
+      ))}
     </div>
   );
 }
