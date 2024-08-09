@@ -21,7 +21,7 @@ export function Openmodal(props) {
         className="openModalbutton"
         onClick={() => openModal(props.portafolio[0])}
       >
-        Ver más
+        See more
       </button>
 
       {selectedProject && (
