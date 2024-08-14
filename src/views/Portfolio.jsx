@@ -16,12 +16,34 @@ import {
   project2,
   project3,
   project4,
+  project5,
 } from "../components/data/Data";
 
 export function Portfolio() {
   return (
     <div className="containerPortfolio">
       <div className="containerPortfolioOne">
+        <Card
+          cardTwo={
+            <div>
+              <Contactinformation
+                ContactinformationParagraph={
+                  "I have created a landing page for people to vote for GuardOwl in the Geminni contest. This contest challenges developers to create revolutionary apps using the Gemini API."
+                }
+              />
+              <Techlogo imgtech={<IoLogoJavascript size={"35px"} />} />
+              <Techlogo imgtech={<IoLogoCss3 size={"35px"} />} />
+              <Techlogo imgtech={<IoLogoHtml5 size={"35px"} />} />
+              <Techlogo imgtech={<FaGitAlt size={"35px"} />} />
+              <Techlogo imgtech={<FaFigma size={"35px"} />} />
+            </div>
+          }
+          color={"#DBCEEF"}
+          cardOne={
+            <Contactinformation ContactinformationParagraph={"Vote Guarowl"} />
+          }
+          Portfolio={project1}
+        />
         <Card
           cardTwo={
             <div>
@@ -43,9 +65,8 @@ export function Portfolio() {
               ContactinformationParagraph={"Movie-Challenge"}
             />
           }
-          Portfolio={project1}
+          Portfolio={project2}
         />
-
         <Card
           cardTwo={
             <div>
@@ -65,7 +86,7 @@ export function Portfolio() {
           cardOne={
             <Contactinformation ContactinformationParagraph={"Denisolo.com"} />
           }
-          Portfolio={project2}
+          Portfolio={project3}
         />
 
         <Card
@@ -89,7 +110,7 @@ export function Portfolio() {
               ContactinformationParagraph={"Dataverse-chat"}
             />
           }
-          Portfolio={project3}
+          Portfolio={project4}
         />
 
         <Card
@@ -111,7 +132,7 @@ export function Portfolio() {
           cardOne={
             <Contactinformation ContactinformationParagraph={"Text Analyzer"} />
           }
-          Portfolio={project4}
+          Portfolio={project5}
         />
       </div>
     </div>
