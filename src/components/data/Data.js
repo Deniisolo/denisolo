@@ -1,6 +1,19 @@
 export const project1 = [
   {
     id: 1,
+    title: "Vote Guarowl",
+    label: "Guarowl",
+    imagen: "/img/guardowl.png",
+    description:
+      "I have created a landing page for people to vote for GuardOwl in the Geminni contest. This contest challenges developers to create revolutionary apps using the Gemini API.  ",
+    technologies: "Technologies: React, Tailwind, Git",
+    demoLink: "https://guarowl.vercel.app/",
+    repoLink: "https://github.com/Deniisolo/guarowl",
+  },
+];
+export const project2 = [
+  {
+    id: 2,
     title: "Movie-Challenge",
     label: "Movie-Challenge",
     imagen: "/img/Moviechallenge.png",
@@ -12,9 +25,9 @@ export const project1 = [
   },
 ];
 
-export const project2 = [
+export const project3 = [
   {
-    id: 2,
+    id: 3,
     title: "Denisolo.com",
     label: "Denisolo.com",
     imagen: "/img/Denisolo.png",
@@ -26,9 +39,9 @@ export const project2 = [
   },
 ];
 
-export const project3 = [
+export const project4 = [
   {
-    id: 3,
+    id: 4,
     title: "Dataverse-chat",
     label: "Dataverse-chat",
     imagen: "/img/Dataverse.png",
@@ -40,9 +53,9 @@ export const project3 = [
   },
 ];
 
-export const project4 = [
+export const project5 = [
   {
-    id: 4,
+    id: 5,
     title: "Text Analyzer",
     label: "Text Analyzer",
     imagen: "/img/TextAnalizer.png",

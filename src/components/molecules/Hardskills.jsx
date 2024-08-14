@@ -15,14 +15,15 @@ export function Hardskills() {
       ></Hardskillspurple>
       <Hardskillsgrey hardSkillsGreyButton={"HTML"}></Hardskillsgrey>
       <Hardskillspurple hardSkillsPurpleButton={"CSS"}></Hardskillspurple>
-      <Hardskillsgrey hardSkillsGreyButton={"Git"}></Hardskillsgrey>
+      <Hardskillsgrey hardSkillsGreyButton={"Tailwind"}></Hardskillsgrey>
       <Hardskillspurple hardSkillsPurpleButton={"GitHub"}></Hardskillspurple>
-      <Hardskillsgrey
-        hardSkillsGreyButton={"Responsive Design"}
-      ></Hardskillsgrey>
+      <Hardskillsgrey hardSkillsGreyButton={"Git"}></Hardskillsgrey>
       <Hardskillspurple
         hardSkillsPurpleButton={"Unit Testing"}
       ></Hardskillspurple>
+      <Hardskillsgrey
+        hardSkillsGreyButton={"Responsive Design"}
+      ></Hardskillsgrey>
     </div>
   );
 }
