@@ -1,5 +1,5 @@
-# Denisolo
-¡Bienvenid@s a Denisolo.com! 👩🏻‍💻
+
+# ¡Bienvenid@s a Denisolo.com! 👩🏻‍💻
 
 ¡Hola! Soy Denis, también conocido como Deniisolo en las redes sociales.
 
@@ -13,8 +13,8 @@ Contenido
 
 Proyectos: Una muestra de proyectos emocionantes que he creado, cada uno con su propia historia y estilo.
 Habilidades: Domino HTML, CSS, JavaScript, TypeScript, Git, GitHub, pruebas unitarias, metodología Scrum y diseño responsivo.
-¡Conéctate conmigo!
+
 
 Correo electrónico: deniissolo@gmail.com
-LinkedIn: Perfil de LinkedIn
+
 ¡Espero saber de ti pronto!
